@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseMagazineRifle
+  id: CMDrumSmartgun
+  name: "drum (smartgun 10x28mm caseless)"
+  components:
+  - type: Tag
+    tags:
+    - CMDrumSmartgun
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgeSmartgun
+    proto: CMCartridgeSmartgun
+    capacity: 500
+  - type: Sprite
+    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Drums/smartgun_drum.rsi
+    layers:
+    - state: mag-2
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+  - type: Appearance

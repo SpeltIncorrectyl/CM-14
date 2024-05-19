@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/master/icons/obj/items/weapons/guns/ammo_by_faction/uscm.dmi at commit 7135fefefe0bf8d6436ab1be45a44a2c25c249ab.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "mag-2"
+        },
+        {
+            "name": "mag-1"
+        },
+        {
+            "name": "mag-0"
+        }
+    ]
+}

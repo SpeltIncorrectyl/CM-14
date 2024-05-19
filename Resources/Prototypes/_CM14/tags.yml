@@ -5,6 +5,9 @@
   id: CMCartridgePistol9mm
 
 - type: Tag
+  id: CMCartridgeSmartgun
+
+- type: Tag
   id: CMCartridgeRevolver44
 
 - type: Tag
@@ -24,6 +27,9 @@
 
 - type: Tag
   id: CMFirstAidKit
+
+- type: Tag
+  id: CMDrumSmartgun
 
 - type: Tag
   id: CMSynthGraft

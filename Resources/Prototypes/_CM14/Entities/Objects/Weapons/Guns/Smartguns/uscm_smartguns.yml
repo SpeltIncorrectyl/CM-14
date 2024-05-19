@@ -1,0 +1,43 @@
+- type: entity
+  parent: BaseItem
+  name: m56 smartgun
+  id: CMWeaponSmartgun
+  description: A powerful man-portable machine gun, boasting an impressive 500 round capacity. Requires a special chest-rig and training to operate. Has auto-targeting functionality, ensuring that shots are aimed towards hostiles and away from marines, averting friendly fire.
+  components:
+  - type: Appearance
+  - type: Wieldable
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _CM14/Objects/Weapons/Guns/Smartguns/m56.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: GunRequiresWield
+  - type: Gun
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 0
+    angleDecay: 0
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: CMM41AShoot
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: StaticPrice
+    price: 500
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMDrumSmartgun

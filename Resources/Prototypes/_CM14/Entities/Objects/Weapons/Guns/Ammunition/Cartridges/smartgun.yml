@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseCartridgeRifle
+  id: CMCartridgeSmartgun
+  name: cartridge (smartgun 10x28mm caseless)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CMCartridgeSmartgun
+  - type: CartridgeAmmo
+    deleteOnSpawn: true #it's caseless (rather convenient considering smartguns have 500 rounds per drum)
+    proto: BulletRifle10x24mm #todo: change to custom bullet
